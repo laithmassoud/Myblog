@@ -44,18 +44,16 @@ $(document).ready(function() {
     var ch = String.fromCharCode(event.which);
 
     if (event.keyCode === 39) {
-      if (parseInt(main.attr("class").slice(3, 4)) < $('#navi ul').children().length) {
         main.hide();
         main.next().fadeIn();
         main = main.next();
-      }
+      
     }
     if (event.keyCode === 37) {
-      if (parseInt(mainClass.attr("class").slice(3, 4)) > 1) {
         main.hide();
         main.prev().fadeIn();
         main = main.prev();
-      }
+      
     }
   });
 });
