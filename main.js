@@ -8,8 +8,8 @@ $(document).ready(function() {
       $('#me').on('click', function() {
        main = $('.me');
        $('.me').fadeIn();
-       $('favcity').hide();
-       $('.favsong').hide();
+       $('.favcity').hide();
+       $('.favmusic').hide();
        $('.contactme').hide();
      });
 
@@ -18,14 +18,14 @@ $(document).ready(function() {
        main = $('.favcity');
        $('.favcity').fadeIn();
        $('.me').hide();
-       $('.favsong').hide();
+       $('.favmusic').hide();
        $('.contactme').hide();
      });
 
-     $('#favsong').on('click', function() {
+     $('#favmusic').on('click', function() {
 
        main = $('.favsong');
-       $('.favsong').fadeIn();
+       $('.favmusic').fadeIn();
        $('.me').hide();
        $('.favcity').hide();
        $('.contactme').hide();
@@ -37,7 +37,7 @@ $(document).ready(function() {
        $('.contactme').fadeIn();
        $('.me').hide();
        $('.favcity').hide();
-       $('.favsong').hide();
+       $('.favmusic').hide();
      });
 
   $(document).keyup(function(event) {
